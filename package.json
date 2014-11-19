@@ -1,6 +1,6 @@
 {
   "name": "compute-lt",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Computes an element-wise comparison (less than) of an array.",
   "author": {
     "name": "Athan Reines",
