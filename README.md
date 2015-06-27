@@ -42,7 +42,7 @@ out = lt( 3, data )
 // returns [ 1, 0, 0, 0, 1 ]
 
 // Array of comparison values:
-out = eq( data, [ 5, 2, 8, 7, 3 ] );
+out = lt( data, [ 5, 2, 8, 7, 3 ] );
 // returns [ 0, 0, 0, 1, 1 ]
 
 // Matrices
@@ -60,7 +60,7 @@ mat = matrix( data, [3,3], 'float64' );
 */
 
 // Single comparison value:
-out = eq( mat, 3 );
+out = lt( mat, 3 );
 /*
 	[ 1 1 1
 	  0 0 0
@@ -68,7 +68,7 @@ out = eq( mat, 3 );
 */
 
 // Matrix of comparison values:
-out = eq( mat, y );
+out = lt( mat, y );
 /*
 	[ 1 1 1
 	  1 0 0
