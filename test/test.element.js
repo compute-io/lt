@@ -24,7 +24,7 @@ describe( 'element lt', function tests() {
 		expect( lt ).to.be.a( 'function' );
 	});
 
-	it( 'should correctly compare differenr values', function test() {
+	it( 'should correctly compare different values', function test() {
 		assert.strictEqual( lt( 2, 4 ), 1 );
 		assert.strictEqual( lt( 900, 800 ), 0 );
 		assert.strictEqual( lt( 'A', 'C' ), 1 );

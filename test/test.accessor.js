@@ -193,7 +193,7 @@ describe( 'accessor lt', function tests() {
 
 	});
 
-	it( 'should throw an error if dividing by a matrix which is not of equal length to the input array', function test() {
+	it( 'should throw an error if comparing to an array which is not of equal length to the input array', function test() {
 		expect( foo ).to.throw( Error );
 		function foo() {
 			lt( [], [1,2], [1,2,3], getValue );
@@ -203,7 +203,7 @@ describe( 'accessor lt', function tests() {
 		}
 	});
 
-	it( 'should throw an error if dividing by a typed array which is not of equal length to the input array', function test() {
+	it( 'should throw an error if comparing to a typed array which is not of equal length to the input array', function test() {
 		expect( foo ).to.throw( Error );
 		function foo() {
 			lt( [], [1,2], new Int32Array( [1,2,3] ), getValue );

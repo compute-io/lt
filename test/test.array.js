@@ -146,7 +146,7 @@ describe( 'array lt', function tests() {
 		assert.deepEqual( actual, expected );
 	});
 
-	it( 'should throw an error if provided an array to be divided which is not of equal length to the input array', function test() {
+	it( 'should throw an error if provided a comparator array which is not of equal length to the input array', function test() {
 		expect( foo ).to.throw( Error );
 		function foo() {
 			lt( [], [1,2], [1,2,3] );
